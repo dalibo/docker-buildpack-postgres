@@ -1,0 +1,14 @@
+FROM dalibo/buildpack:centos6
+LABEL org.opencontainers.image.authors="etienne.bersac@dalibo.com"
+
+RUN set -ex; \
+    yum -q -y install \
+        https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
+    ; \
+    for v in 12 11 10 96 95 ; do \
+    yum -q -y install \
+        postgresql$v-server postgresql$v-contrib postgresql$v-devel pgtap$v \
+    ; \
+    done ; \
+    yum clean all ; \
+    :
