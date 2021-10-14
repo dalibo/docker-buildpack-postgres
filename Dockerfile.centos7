@@ -1,0 +1,16 @@
+FROM dalibo/buildpack:centos7
+LABEL org.opencontainers.image.authors="etienne.bersac@dalibo.com"
+
+RUN set -ex; \
+    yum -y install \
+        centos-release-scl \
+        epel-release \
+        https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
+    ; \
+    for v in 14 13 12 11 10 96 ; do \
+    yum -y install \
+        postgresql$v-server postgresql$v-contrib postgresql$v-devel pgtap$v \
+    ; \
+    done ; \
+    yum clean all ; \
+    :
