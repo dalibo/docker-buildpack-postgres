@@ -1,4 +1,4 @@
-FROM dalibo/buildpack:buster
+FROM dalibo/buildpack-python:buster
 
 RUN set -ex; \
     curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - ; \

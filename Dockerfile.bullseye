@@ -1,4 +1,4 @@
-FROM dalibo/buildpack:bullseye
+FROM dalibo/buildpack-python:bullseye
 
 RUN set -ex; \
     curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - ; \
