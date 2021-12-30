@@ -13,5 +13,8 @@ This image is based on
 
 ## Tags
 
+- `centos7` with PostgreSQL 14, 13, 12, 11, 10 and 9.6.
 - `centos6` with PostgreSQL 12, 11, 10, 9.6 and 9.5.
-- `buster` with PostgreSQL 13, 12, 11, 10, 9.6 and 9.5.
+- `bullseye` with PostgreSQL 14, 13, 12, 11, 10, 9.6 and 9.5.
+- `buster` with PostgreSQL 14, 13, 12, 11, 10, 9.6 and 9.5.
+- `stretch` with PostgreSQL 14, 13, 12, 11, 10, 9.6 and 9.5.
