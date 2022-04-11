@@ -1,5 +1,6 @@
 FROM dalibo/buildpack-python:rockylinux8
 
+ADD pgdg-eol.repo /etc/yum.repos.d/pgdg-eol.repo
 RUN set -ex; \
     yum -qy install \
         dnf-plugins-core \

@@ -1,6 +1,7 @@
 FROM dalibo/buildpack-python:centos7
 LABEL org.opencontainers.image.authors="etienne.bersac@dalibo.com"
 
+ADD pgdg-eol.repo /etc/yum.repos.d/pgdg-eol.repo
 RUN set -ex; \
     yum -y install \
         centos-release-scl \
