@@ -7,7 +7,7 @@ RUN set -ex; \
         centos-release-scl \
         https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
     ; \
-    for v in 14 13 12 11 10 96 ; do \
+    for v in 13 12 11 96 ; do \
     yum -y install \
         postgresql$v-server postgresql$v-contrib postgresql$v-devel pgtap$v \
     ; \

@@ -2,11 +2,12 @@ FROM dalibo/buildpack-python:bookworm
 
 RUN set -ex; \
     curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - ; \
-    echo "deb http://apt.postgresql.org/pub/repos/apt/ bookworm-pgdg main 14" > /etc/apt/sources.list.d/pgdg.list; \
+    echo "deb http://apt.postgresql.org/pub/repos/apt/ bookworm-pgdg main 15" > /etc/apt/sources.list.d/pgdg.list; \
     mkdir -p /etc/postgresql-common/createcluster.d/; \
     echo "create_main_cluster = false" > /etc/postgresql-common/createcluster.d/no-main-cluster.conf; \
     apt-get update -y; \
     apt-get install -y --no-install-recommends \
+        postgresql-15 postgresql-client-15 postgresql-contrib-15 \
         postgresql-14 postgresql-client-14 postgresql-contrib-14 \
         postgresql-13 postgresql-client-13 postgresql-contrib-13 \
     ; \

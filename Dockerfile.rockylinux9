@@ -9,6 +9,7 @@ RUN set -ex; \
     yum -qy install \
         postgresql15-server postgresql15-contrib \
         postgresql14-server postgresql14-contrib \
+        postgresql14-server postgresql13-contrib \
     ; \
     yum clean all ; \
     :
