@@ -13,7 +13,7 @@ This image is based on
 
 ## Tags
 
-- `rockylinux9` with PostgreSQL 16, 15, 14 and 13.
+- `rockylinux9` with PostgreSQL 16, 15, and 14.
 - `rockylinux8` with PostgreSQL 14, 13 and 12.
 - `centos7` with PostgreSQL 13, 12, 11 and 9.6.
 - `centos6` with PostgreSQL 12, 11, 10 and 9.5.

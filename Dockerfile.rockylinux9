@@ -10,7 +10,6 @@ RUN set -ex; \
         postgresql16-server postgresql16-contrib \
         postgresql15-server postgresql15-contrib \
         postgresql14-server postgresql14-contrib \
-        postgresql14-server postgresql13-contrib \
     ; \
     yum clean all ; \
     :
