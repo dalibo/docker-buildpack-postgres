@@ -3,10 +3,11 @@ FROM dalibo/buildpack-python:rockylinux9
 RUN set -ex; \
     yum -qy install \
         dnf-plugins-core \
-        https://download.postgresql.org/pub/repos/yum/common/redhat/rhel-9-x86_64/pgdg-redhat-repo-42.0-26.noarch.rpm \
+        https://download.postgresql.org/pub/repos/yum/common/redhat/rhel-9-x86_64/pgdg-redhat-repo-42.0-28.noarch.rpm \
     ; \
-    yum-config-manager --enable pgdg15-updates-testing; \
+    yum-config-manager --enable pgdg16-updates-testing; \
     yum -qy install \
+        postgresql16-server postgresql16-contrib \
         postgresql15-server postgresql15-contrib \
         postgresql14-server postgresql14-contrib \
         postgresql14-server postgresql13-contrib \
