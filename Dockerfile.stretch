@@ -2,7 +2,7 @@ FROM dalibo/buildpack-python:stretch
 
 RUN set -ex; \
     curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - ; \
-    echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main 14" > /etc/apt/sources.list.d/pgdg.list; \
+    echo "deb https://apt-archive.postgresql.org/pub/repos/apt stretch-pgdg main" > /etc/apt/sources.list.d/pgdg.list; \
     mkdir -p /etc/postgresql-common/createcluster.d/; \
     echo "create_main_cluster = false" > /etc/postgresql-common/createcluster.d/no-main-cluster.conf; \
     apt-get update -y; \
