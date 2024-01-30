@@ -6,7 +6,7 @@ RUN set -ex; \
     yum -y install \
         centos-release-scl \
     ; \
-    for v in 13 12 11 96 ; do \
+    for v in 13 11 96 ; do \
     yum -y install \
         postgresql$v-server postgresql$v-contrib postgresql$v-devel pgtap$v \
     ; \
