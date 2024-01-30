@@ -2,11 +2,6 @@ FROM dalibo/buildpack-python:rockylinux8
 
 ADD pgdg-eol.repo /etc/yum.repos.d/pgdg-eol.repo
 RUN set -ex; \
-    yum -qy install \
-        dnf-plugins-core \
-        https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm \
-    ; \
-    yum config-manager --set-enabled powertools; \
     dnf -qy module disable postgresql; \
     yum -qy install \
         postgresql14-server postgresql14-contrib \
