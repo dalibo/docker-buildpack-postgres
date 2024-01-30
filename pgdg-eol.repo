@@ -4,3 +4,10 @@ baseurl=https://yum-archive.postgresql.org/9.6/redhat/rhel-$releasever-x86_64
 enabled=1
 gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG
+
+[pgdg11]
+name=PostgreSQL 11 RPMs for RHEL $releasever
+baseurl=https://yum-archive.postgresql.org/11/redhat/rhel-$releasever-x86_64
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG
