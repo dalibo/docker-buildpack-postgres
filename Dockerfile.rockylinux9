@@ -1,7 +1,6 @@
 FROM dalibo/buildpack-python:rockylinux9
 
 RUN set -ex; \
-    yum-config-manager --enable pgdg17-updates-testing; \
     yum -qy install \
         postgresql17-server postgresql17-contrib \
         postgresql16-server postgresql16-contrib \
