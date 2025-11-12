@@ -8,7 +8,7 @@ Buildpack image for development of PostgreSQL tooling:
 - pgTAP.
 
 This image is based on
-[dalibo/buildpack](https://hub.docker.com/r/dalibo/buildpack).
+[dalibo/buildpack-python](https://hub.docker.com/r/dalibo/buildpack-python).
 
 Instead of loading all versions in all images,
 PostgreSQL versions are distributed in images.
