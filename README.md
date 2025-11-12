@@ -21,3 +21,4 @@ This image is based on
 - `bullseye` with PostgreSQL 14, 13 and 12.
 - `buster` with PostgreSQL 13, 12, 10.
 - `stretch` with PostgreSQL 11, 10, 9.6 and 9.5.
+- `trixie` with PostgreSQL 18.
