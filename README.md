@@ -17,7 +17,7 @@ while even PostgreSQL versions are on Debian.
 - `rockylinux10` with PostgreSQL 18 and 16.
 - `trixie` with PostgreSQL 17 and 15.
 - `rockylinux9` with PostgreSQL 18, 16 and 14.
-- `bookworm` with PostgreSQL 15 and 13.
+- `bookworm` with PostgreSQL 17, 15 and 13.
 - `rockylinux8` with PostgreSQL 14 and 12.
 - `bullseye` with PostgreSQL 13 and 11.
 - `centos7` with PostgreSQL 12 and 10.
