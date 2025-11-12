@@ -2,13 +2,9 @@
 
 Buildpack image for development of PostgreSQL tooling:
 
+- [dalibo/buildpack-python](https://hub.docker.com/r/dalibo/buildpack-python).
 - All supported PostgreSQL server from PGDG.
 - PostgreSQL contrib.
-- PostgreSQL development files.
-- pgTAP.
-
-This image is based on
-[dalibo/buildpack-python](https://hub.docker.com/r/dalibo/buildpack-python).
 
 Instead of loading all versions in all images,
 PostgreSQL versions are distributed in images.
