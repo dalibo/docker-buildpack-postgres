@@ -3,6 +3,7 @@ FROM dalibo/buildpack-python:rockylinux10
 RUN set -ex; \
     yum -qy install \
         postgresql18-server postgresql18-contrib \
+        postgresql16-server postgresql16-contrib \
     ; \
     yum clean all ; \
     :

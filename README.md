@@ -10,13 +10,18 @@ Buildpack image for development of PostgreSQL tooling:
 This image is based on
 [dalibo/buildpack](https://hub.docker.com/r/dalibo/buildpack).
 
+Instead of loading all versions in all images,
+PostgreSQL versions are distributed in images.
+Older PostgreSQL are installed on older distributions.
+Odd PostgreSQL versions are on RHEL
+while even PostgreSQL versions are on Debian.
 
 ## Tags
 
-- `rockylinux10` with PostgreSQL 18.
-- `rockylinux9` with PostgreSQL 17, 16 and 15.
-- `rockylinux8` with PostgreSQL 14, 13 and 12.
-- `centos7` with PostgreSQL 13, 11 and 9.6.
-- `bookworm` with PostgreSQL 16, 15, 14 and 13.
-- `bullseye` with PostgreSQL 14, 13 and 12.
-- `trixie` with PostgreSQL 18.
+- `rockylinux10` with PostgreSQL 18 and 16.
+- `trixie` with PostgreSQL 17 and 15.
+- `rockylinux9` with PostgreSQL 18, 16 and 14.
+- `bookworm` with PostgreSQL 15 and 13.
+- `rockylinux8` with PostgreSQL 14 and 12.
+- `bullseye` with PostgreSQL 13 and 11.
+- `centos7` with PostgreSQL 12 and 10.

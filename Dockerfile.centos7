@@ -1,15 +1,11 @@
 FROM dalibo/buildpack-python:centos7
 LABEL org.opencontainers.image.authors="etienne.bersac@dalibo.com"
 
-ADD pgdg-eol.repo /etc/yum.repos.d/pgdg-eol.repo
 RUN set -ex; \
-    yum -y install \
-        centos-release-scl \
+    yum -y install centos-release-scl ; \
+    yum -q -y install \
+        postgresql12-server postgresql12-contrib \
+        postgresql10-server postgresql10-contrib \
     ; \
-    for v in 13 11 96 ; do \
-    yum -y install \
-        postgresql$v-server postgresql$v-contrib postgresql$v-devel pgtap$v \
-    ; \
-    done ; \
     yum clean all ; \
     :

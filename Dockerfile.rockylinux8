@@ -5,7 +5,6 @@ RUN set -ex; \
     dnf -qy module disable postgresql; \
     yum -qy install \
         postgresql14-server postgresql14-contrib \
-        postgresql13-server postgresql13-contrib \
         postgresql12-server postgresql12-contrib \
     ; \
     yum clean all ; \
