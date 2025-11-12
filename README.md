@@ -18,5 +18,4 @@ This image is based on
 - `centos7` with PostgreSQL 13, 12, 11 and 9.6.
 - `bookworm` with PostgreSQL 16, 15, 14 and 13.
 - `bullseye` with PostgreSQL 14, 13 and 12.
-- `buster` with PostgreSQL 13, 12, 10.
 - `trixie` with PostgreSQL 18.

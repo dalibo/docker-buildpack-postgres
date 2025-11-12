@@ -1,7 +1,7 @@
-all: alpine rockylinux8 centos7 bookworm bullseye buster
+all: alpine rockylinux8 centos7 bookworm bullseye
 
 .PHONY: centos6
-alpine centos7 trixie bookworm bullseye buster rockylinux9 rockylinux8:
+alpine centos7 trixie bookworm bullseye rockylinux9 rockylinux8:
 	docker build \
 	  --build-arg http_proxy \
 	  --tag dalibo/buildpack-postgres:$@ \
