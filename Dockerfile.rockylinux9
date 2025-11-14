@@ -2,9 +2,9 @@ FROM dalibo/buildpack-python:rockylinux9
 
 RUN set -ex; \
     yum -qy install \
-        postgresql18-server postgresql18-contrib \
-        postgresql16-server postgresql16-contrib \
-        postgresql14-server postgresql14-contrib \
+        postgresql18-server \
+        postgresql16-server \
+        postgresql14-server \
     ; \
     yum clean all ; \
     :
