@@ -2,7 +2,6 @@ FROM dalibo/buildpack-python:centos7
 LABEL org.opencontainers.image.authors="etienne.bersac@dalibo.com"
 
 RUN set -ex; \
-    yum -y install centos-release-scl ; \
     yum -q -y install \
         postgresql12-server postgresql12-contrib \
         postgresql10-server postgresql10-contrib \
