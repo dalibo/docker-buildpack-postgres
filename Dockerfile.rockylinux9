@@ -2,9 +2,12 @@ FROM dalibo/buildpack-python:rockylinux9
 
 RUN set -ex; \
     yum -qy install \
-        postgresql18-server \
-        postgresql16-server \
-        postgresql14-server \
+        https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/openssl-fips-provider-3.5.1-6.el9.x86_64.rpm \
+        https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/openssl-libs-3.5.1-6.el9.x86_64.rpm \
+        https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/openssl-3.5.1-6.el9.x86_64.rpm \
+        postgresql18-server postgresql18-contrib \
+        postgresql16-server postgresql16-contrib \
+        postgresql14-server postgresql14-contrib \
     ; \
     yum clean all ; \
     :
